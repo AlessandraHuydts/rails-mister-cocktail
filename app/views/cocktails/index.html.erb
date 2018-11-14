@@ -2,7 +2,7 @@
 <ul>
   <% @cocktails.each do |cocktail| %>
   <li>
-    <%= link_to cocktail.name, cocktail_path(cocktail) %>
+    <%= link_to cocktail.name.capitalize, cocktail_path(cocktail) %>
   <% end %>
   </li>
 </ul>
